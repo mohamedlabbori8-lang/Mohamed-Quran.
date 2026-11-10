@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b3d2e">
+  <title>Mohamed.Quran.com | القرآن الكريم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="الصفحة الرئيسية">
+      <span class="brand-mark">۞</span>
+      <span>Mohamed.Quran.com</span>
+    </a>
+    <nav><a href="#read">قراءة القرآن</a><a href="#listen">الاستماع</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="ornament">۞</div>
+      <p class="eyebrow">نورٌ وهداية</p>
+      <h1>القرآن الكريم</h1>
+      <p class="intro">اقرأ آيات الله، واستمع إليها، واجعل لقلبك نصيباً من القرآن كل يوم.</p>
+      <a class="main-button" href="#read">ابدأ القراءة</a>
+    </section>
+
+    <section class="panel" id="read">
+      <div class="section-heading">
+        <div><p class="eyebrow">المصحف الشريف</p><h2>قراءة القرآن</h2></div>
+        <span class="gold-line"></span>
+      </div>
+      <div class="controls">
+        <label for="surahSelect">اختر السورة</label>
+        <select id="surahSelect"><option value="">جارٍ تحميل السور...</option></select>
+        <button id="loadSurah" class="button">عرض السورة</button>
+      </div>
+      <p id="status" class="status" aria-live="polite">يتم تحميل قائمة السور...</p>
+      <article id="surahContent" class="quran-text" aria-live="polite">
+        <p class="placeholder">اختر سورة لبدء القراءة.</p>
+      </article>
+    </section>
+
+    <section class="panel listen-panel" id="listen">
+      <div class="section-heading">
+        <div><p class="eyebrow">تلاوات عطرة</p><h2>الاستماع للقرآن</h2></div>
+        <span class="gold-line"></span>
+      </div>
+      <p class="listen-description">اختر سورة ثم شغّل التلاوة الصوتية.</p>
+      <div class="controls">
+        <label for="audioSurah">السورة</label>
+        <select id="audioSurah"><option value="">جارٍ تحميل السور...</option></select>
+      </div>
+      <audio id="audioPlayer" controls preload="none">
+        متصفحك لا يدعم تشغيل الصوت.
+      </audio>
+      <p class="small-note">يحتاج تشغيل التلاوة إلى اتصال بالإنترنت.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>اللهم اجعل القرآن ربيع قلوبنا ونور صدورنا.</p>
+    <span>Mohamed.Quran.com</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
